@@ -37,7 +37,7 @@ const App = () => {
     if (data) {
       setFilteredData(
         data.filter(
-          (user) =>
+          (user: userType) =>
             user.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
             user.username.toLowerCase().includes(searchTerm.toLowerCase())
         )
